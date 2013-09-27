@@ -1,0 +1,9 @@
+!!!
+%html
+	%head
+		%title Chitter
+	%body
+		%h1 Welcome to Chitter
+		- if current_maker
+			Welcome, = current_maker.email
+		= yield

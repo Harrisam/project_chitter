@@ -8,11 +8,11 @@ gem "haml"
 gem "sass"
 gem "bcrypt-ruby"
 gem "rack-flash3"
+gem "data_mapper"
 gem "dm-postgres-adapter"
 
 group :development, :test do  
 	gem "cucumber-sinatra"
-	gem "data_mapper"
 	gem "shotgun"
 	gem "rspec"
 	gem "cucumber"
