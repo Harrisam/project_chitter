@@ -18,7 +18,7 @@ feature "Maker signs up" do
     	visit '/makers/new'
     	fill_in :email, :with => email
     	fill_in :password, :with => password
-      fill_in :password_confirmation, with: password_confirmation
+      fill_in :password_confirmation, :with => password_confirmation
     	fill_in :handle, :with => handle
     	fill_in :name, :with => name
     	click_button "Sign up"

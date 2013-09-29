@@ -32,6 +32,7 @@ class Chitter < Sinatra::Base
 	post '/makers' do
 		maker = Maker.new(:email => params[:email], 
 						:password => params[:password],
+						:password_confirmation =>params[:password_confirmation],
 						:handle => params[:handle],
 						:name => params[:name])
 		maker.save
